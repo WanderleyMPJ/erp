@@ -23,7 +23,7 @@ class AuthServiceProvider extends ServiceProvider {
      *
      * @return void
      */
-    public function boot() {
+  /*  public function boot() {
         $this->registerPolicies();
 
         $permissions = Permission::with('roles')->get();
@@ -40,6 +40,6 @@ class AuthServiceProvider extends ServiceProvider {
             if ($user->hasAnyroles('Admin'))
                 return true;
         });
-    }
+    }*/
 
 }
