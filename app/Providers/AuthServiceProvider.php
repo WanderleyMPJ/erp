@@ -24,7 +24,7 @@ class AuthServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
-/*        $this->registerPolicies();
+       $this->registerPolicies();
 
         $permissions = Permission::with('roles')->get();
 
@@ -39,7 +39,7 @@ class AuthServiceProvider extends ServiceProvider {
         Gate::before(function(User $user, $hability) {
             if ($user->hasAnyroles('Admin'))
                 return true;
-        });*/
+        });
     }
 
 }

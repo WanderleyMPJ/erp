@@ -8,39 +8,35 @@
 @endsection
 
 @section('content')
+
 <div class="widget-box">
-    <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+    <div class="widget-title"> <span class="icon"><input type="checkbox" id="title-checkbox" name="title-checkbox"></span>
         <h5>Listagem Pessoas</h5>
     </div>
-
-
-    <table class="table table-bordered data-table">
+    <div class="widget-content nopadding">
+    <table class="table table-bordered data-table table-striped with-check">
         <thead>
             <tr>
-        <div class="widget-content nopadding">
-            <div class="widget-title"> <span class="icon">
-                    <input type="checkbox" id="title-checkbox" name="title-checkbox" />
-                </span>
-                <h5>Static table with checkboxes</h5>
-            </div>  
-            <th><i class="icon-resize-vertical"></i></th>
-            <th>Nome</th>
-            <th>CNPJ ou CPF</th>
-            <th>RG ou Insc Estadual</th>
-            <th>Ativo</th>
+                <th><i class="icon-resize-vertical"></i></th>
+                <th>Nome</th>
+                <th>CNPJ ou CPF</th>
+                <th>RG ou Insc Estadual</th>
+                <th>Ativo</th>
             </tr>
-            </thead>
-            <tbody>
-                @forelse($pessoas as $pessoa)
+        </thead>
+        <tbody>
+            @forelse($pessoas as $pessoa)
             
-            <tr class="gradeX">
-                <td><input type="checkbox" /></td>  
+            <tr>
+                <td><input id="check" type="checkbox" /></td>
                 <td>{{$pessoa->nome}}</td>
                 <td>{{$pessoa->cnpj_cpf}}</td>
                 <td>{{$pessoa->rg_inscest}}</td>
-                <td><input type="checkbox" />{{$pessoa->ativo}}</td>
-                
-
+                @if($pessoa->ativo == 1)
+                <td><input type="checkbox"  checked="checked" disabled/></td>
+                @elseif($pessoa->ativo == 0)
+                <td><input type="checkbox" disabled/></td>
+                @endif
             </tr>
             @empty
             <p>Nenhuma Pessoa Encontrada...</p>
@@ -49,4 +45,13 @@
     </table>
 </div>
 </div>
+{{--<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/matrix.tables.js"></script>--}}
 @endsection
+@extends('layouts._rodape')

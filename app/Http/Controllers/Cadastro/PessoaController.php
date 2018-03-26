@@ -6,6 +6,7 @@ use App\Model\Cadastro\Pessoa;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Gate;
+use phpDocumentor\Reflection\DocBlock\Tags\Return_;
 
 class PessoaController extends Controller
 {
@@ -31,9 +32,14 @@ class PessoaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Pessoa $pessoa)
     {
-        //
+        $pessoas =$pessoa->find($pessoa->id);
+
+        if (Gate::denies('pessoa_create', $pessoas) )
+            abort(403, 'Usuário não Autorizado');
+
+        return view('cadastro.pessoa.add', compact('pessoa'));
     }
 
     /**
