@@ -278,8 +278,6 @@ class Generator
     {
         return $this->format($method, $attributes);
     }
-<<<<<<< HEAD
-=======
 
 public static function cnpj($verdadeiro = true)
     {
@@ -352,5 +350,4 @@ public static function cnpj($verdadeiro = true)
 
 
 
->>>>>>> Pedro
 }

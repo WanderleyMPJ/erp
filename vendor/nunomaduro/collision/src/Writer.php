@@ -212,11 +212,7 @@ class Writer implements WriterContract
      */
     protected function renderEditor(Frame $frame): WriterContract
     {
-<<<<<<< HEAD
-        $this->render('at <fg=green>'.$frame->getFile().'</>'.':<fg=green>'.$frame->getLine().'</>');
-=======
         $this->render('at <fg=green>'.$frame->getFile().'</>'.': <fg=green>'.$frame->getLine().'</>');
->>>>>>> Pedro
 
         $content = $this->highlighter->highlight($frame->getFileContents(), (int) $frame->getLine());
 
@@ -250,11 +246,7 @@ class Writer implements WriterContract
             $pos = str_pad($i + 1, 4, ' ');
 
             $this->render("<comment><fg=cyan>$pos</>$class$function($args)</comment>");
-<<<<<<< HEAD
-            $this->render("    <fg=green>$file</>:<fg=green>$line</>", false);
-=======
             $this->render("    <fg=green>$file</> : <fg=green>$line</>", false);
->>>>>>> Pedro
         }
 
         return $this;
