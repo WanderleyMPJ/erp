@@ -35,6 +35,10 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Laravel\\Tinker\\' => array($vendorDir . '/laravel/tinker/src'),
+<<<<<<< HEAD
+=======
+    'JansenFelipe\\FakerBR\\' => array($vendorDir . '/jansenfelipe/faker-br/src'),
+>>>>>>> Pedro
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'Fideloper\\Proxy\\' => array($vendorDir . '/fideloper/proxy/src'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),

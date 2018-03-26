@@ -6,6 +6,7 @@ if (preg_match('/On branch ([^\n]+)\n/', shell_exec('git status'), $match)) {
     $currentBranch = $match[1];
 }
 shell_exec('git fetch --all --tags --prune');
+<<<<<<< HEAD
 $remotes = explode("\n", trim(shell_exec('git remote')));
 $tagsCommand = count($remotes)
     ? 'git ls-remote --tags '.(in_array('upstream', $remotes) ? 'upstream' : (in_array('origin', $remotes) ? 'origin' : $remotes[0]))
@@ -15,6 +16,13 @@ $tags = array_map(function ($ref) {
 
     return isset($ref[1]) ? $ref[1] : $ref[0];
 }, array_filter(explode("\n", trim(shell_exec($tagsCommand))), function ($ref) {
+=======
+$tags = array_map(function ($ref) {
+    $ref = explode('refs/tags/', $ref);
+
+    return $ref[1];
+}, array_filter(explode("\n", trim(shell_exec('git ls-remote --tags origin'))), function ($ref) {
+>>>>>>> Pedro
     return substr($ref, -3) !== '^{}';
 }));
 usort($tags, 'version_compare');
@@ -36,11 +44,14 @@ if (strtolower($tag) !== 'all') {
 }
 
 foreach ($tags as $tag) {
+<<<<<<< HEAD
     $archive = "Carbon-$tag.zip";
     if (isset($argv[2]) && $argv[2] === 'missing' && file_exists($archive)) {
         continue;
     }
 
+=======
+>>>>>>> Pedro
     $branch = "build-$tag";
     shell_exec('git stash');
     shell_exec("git branch -d $branch");
@@ -49,7 +60,11 @@ foreach ($tags as $tag) {
     shell_exec('composer update --no-interaction --no-dev --optimize-autoloader');
     $zip = new ZipArchive();
 
+<<<<<<< HEAD
     $zip->open($archive, ZipArchive::CREATE | ZipArchive::OVERWRITE);
+=======
+    $zip->open("Carbon-$tag.zip", ZipArchive::CREATE | ZipArchive::OVERWRITE);
+>>>>>>> Pedro
 
     foreach (array('src', 'vendor', 'Carbon') as $directory) {
         if (is_dir($directory)) {

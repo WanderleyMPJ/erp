@@ -4,7 +4,11 @@
 
 namespace Composer\Autoload;
 
+<<<<<<< HEAD
 class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
+=======
+class ComposerStaticInitf178c00734e056fb85f8938698acd830
+>>>>>>> Pedro
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -78,6 +82,13 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
         ),
+<<<<<<< HEAD
+=======
+        'J' => 
+        array (
+            'JansenFelipe\\FakerBR\\' => 21,
+        ),
+>>>>>>> Pedro
         'I' => 
         array (
             'Illuminate\\' => 11,
@@ -228,6 +239,13 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+<<<<<<< HEAD
+=======
+        'JansenFelipe\\FakerBR\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jansenfelipe/faker-br/src',
+        ),
+>>>>>>> Pedro
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
@@ -316,19 +334,40 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
+=======
+        'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
+>>>>>>> Pedro
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+=======
+        'App\\Http\\Controllers\\Cadastro\\PessoaController' => __DIR__ . '/../..' . '/app/Http/Controllers/Cadastro/PessoaController.php',
+        'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\PessoaGrupoController' => __DIR__ . '/../..' . '/app/Http/Controllers/PessoaGrupoController.php',
+        'App\\Http\\Controllers\\PessoaRedeController' => __DIR__ . '/../..' . '/app/Http/Controllers/PessoaRedeController.php',
+        'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\PanelMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/PanelMiddleware.php',
+>>>>>>> Pedro
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Model\\Cadastro\\Pessoa' => __DIR__ . '/../..' . '/app/Model/Cadastro/Pessoa.php',
+<<<<<<< HEAD
+=======
+        'App\\Model\\Cadastro\\PessoaContato' => __DIR__ . '/../..' . '/app/Model/Cadastro/PessoaContato.php',
+        'App\\Model\\Cadastro\\PessoaEndereco' => __DIR__ . '/../..' . '/app/Model/Cadastro/PessoaEndereco.php',
+        'App\\Model\\Cadastro\\PessoaGrupo' => __DIR__ . '/../..' . '/app/Model/Cadastro/PessoaGrupo.php',
+>>>>>>> Pedro
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -338,7 +377,10 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
+<<<<<<< HEAD
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+=======
+>>>>>>> Pedro
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -1740,6 +1782,10 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+<<<<<<< HEAD
+=======
+        'JansenFelipe\\FakerBR\\FakerBR' => __DIR__ . '/..' . '/jansenfelipe/faker-br/src/FakerBR.php',
+>>>>>>> Pedro
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -2316,6 +2362,10 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD_FROM' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'Parsedown' => __DIR__ . '/..' . '/erusev/parsedown/Parsedown.php',
+<<<<<<< HEAD
+=======
+        'PessoaSeeder' => __DIR__ . '/../..' . '/database/seeds/PessoaSeeder.php',
+>>>>>>> Pedro
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
@@ -3616,10 +3666,17 @@ class ComposerStaticInit13ef3de9599cb71e827694ca34ededcb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+<<<<<<< HEAD
             $loader->prefixLengthsPsr4 = ComposerStaticInit13ef3de9599cb71e827694ca34ededcb::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit13ef3de9599cb71e827694ca34ededcb::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit13ef3de9599cb71e827694ca34ededcb::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit13ef3de9599cb71e827694ca34ededcb::$classMap;
+=======
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf178c00734e056fb85f8938698acd830::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf178c00734e056fb85f8938698acd830::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf178c00734e056fb85f8938698acd830::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf178c00734e056fb85f8938698acd830::$classMap;
+>>>>>>> Pedro
 
         }, null, ClassLoader::class);
     }

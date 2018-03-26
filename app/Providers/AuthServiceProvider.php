@@ -23,8 +23,13 @@ class AuthServiceProvider extends ServiceProvider {
      *
      * @return void
      */
+<<<<<<< HEAD
   /*  public function boot() {
         $this->registerPolicies();
+=======
+    public function boot() {
+       $this->registerPolicies();
+>>>>>>> Pedro
 
         $permissions = Permission::with('roles')->get();
 
